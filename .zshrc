@@ -115,3 +115,12 @@ export PATH="$HOME/.yarn/bin:$PATH"
 # go
 export GOPATH="$HOME/projects/go"
 export PATH="$HOME/projects/go/bin:$PATH"
+
+# zsh highlight
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# pure prompt
+# npm install --global pure-prompt
+# autoload -U promptinit; promptinit
+# prompt pure
+

@@ -76,7 +76,7 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# Set CLICOLOR if you want Ansi Colors in iTerm2 
+# Set CLICOLOR if you want Ansi Colors in iTerm2
 export CLICOLOR=1
 
 # Set colors to match iTerm2 Terminal Colors
@@ -89,9 +89,9 @@ export PATH="/usr/local/bin:${PATH}"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Virtualenvwrapper
-export WORKON_HOME=$HOME/.venvs
-export PROJECT_HOME=$HOME/vvovk/projects
-source /usr/local/bin/virtualenvwrapper.sh
+# export WORKON_HOME=$HOME/.venvs
+# export PROJECT_HOME=$HOME/vvovk/projects
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -124,3 +124,24 @@ export PATH="$HOME/projects/go/bin:$PATH"
 # autoload -U promptinit; promptinit
 # prompt pure
 
+# Android SDK
+export ANDROID_SDK=/Users/vvovk/Library/Android/sdk
+export PATH="/Users/vvovk/Library/Android/sdk/platform-tools:$PATH"
+
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# Android emulator
+alias emul='~/Library/Android/sdk/emulator/emulator'
+alias emul-ls='~/Library/Android/sdk/emulator/emulator -list-avds'
+alias emul-nexus='~/Library/Android/sdk/emulator/emulator -avd Nexus_5X_API_28 -netdelay none -netspeed full &'
+alias emul-pixel3='~/Library/Android/sdk/emulator/emulator -avd Pixel_3_XL_API_28 -netdelay none -netspeed full &'
+alias emul-note8='~/Library/Android/sdk/emulator/emulator -avd Samsung_Note_8_API_28 -netdelay none -netspeed full &'
+function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
+
+# flutter
+export PATH="$PATH:/Users/vvovk/Library/flutter/bin"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+source /Users/vvovk/.rvm/scripts/rvm
